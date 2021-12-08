@@ -1,11 +1,15 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: white;
+  --secondary-color: rgb(226, 84, 84);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   margin-bottom: 0 30px;
+  font-family: var(--default-font-family);
+  background: #ffffff;
 }
 
 h1,
@@ -13,23 +17,37 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
 h1 {
   font-size: 96px;
 }
 
-h2 {
-  font-size: 48px;
+.hero {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
 }
 
-h3 {
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 2;
   font-size: 24px;
-  opacity: 0.7;
 }
 
 p {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
@@ -52,7 +70,7 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: white;
   max-width: 150px;
@@ -63,8 +81,9 @@ p {
 }
 
 .secondary-link {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+  background-color: white;
   box-shadow: var(--box-shadow);
   max-width: 150px;
   text-decoration: none;
@@ -75,7 +94,7 @@ p {
 
 .secondary-link:hover {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .homepage-link {
